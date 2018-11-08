@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<div class="bar bar-header bar-positive">
+    <h1 class="header" col-12>CALCULADORA</h1>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col class="pantalla" id="display" col-12></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col *ngFor="let item of rowOne" class="columna" col-3 (click)="displayData(item)"> 
+            {{item}}
+          </ion-col>
+        </ion-row> <!-- First row -->
+        <ion-row>
+          <ion-col *ngFor="let item of rowTwo" class="columna" col-3 (click)="displayData(item)"> 
+            {{item}}
+          </ion-col>
+        </ion-row> <!-- Second row -->
+        <ion-row>
+          <ion-col *ngFor="let item of rowThree" class="columna" col-3 (click)="displayData(item)"> 
+            {{item}}
+          </ion-col>
+        </ion-row> <!-- Third row -->
+        <ion-row>
+          <ion-col *ngFor="let item of rowFour" class="columna" col-3 (click)="displayData(item)"> 
+            {{item}}
+          </ion-col>
+        </ion-row> <!-- fourth row -->
+      </ion-grid>
+</div>

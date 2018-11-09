@@ -63,6 +63,7 @@ export class HomePage {
       document.getElementById('display').innerHTML = this.operation;
     }
   }
+
 }
 
 

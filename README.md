@@ -1,2 +1,2 @@
-# Ionic---Calculator
+# Ionic - Calculator
 Simple calculator made with ionic.
